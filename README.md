@@ -1,7 +1,6 @@
 # Buffer Overflow Toolkit
 ## Name: Buffer Overflow Toolkit
 ## Author: 0xans
-## Contact: Instagram: [0x.ans](https://instagram.com/0x.ans)
 
 ```
 ██████╗  ██████╗ ███████╗████████╗ ██████╗  ██████╗ ██╗     ██╗  ██╗██╗████████╗
