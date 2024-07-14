@@ -18,15 +18,12 @@ def fuzz(ip, port, timeout, size, sleep, prefix, step):
             s.sendall(bytes(payload + '\r\n', 'latin-1'))
             s.recv(1024)
     except socket.timeout:
-        print(f"{success} Crashed at payload size: {size}")
-        with open('CrashPoint.txt', 'w') as f:
-            f.write(f'Crashed at size: {size}')
-        break
+        print(f"{sucess} Crashed at payload size: {size}")
     except KeyboardInterrupt:
         return
     except Exception as e:
         print(f"{error} Unexpected error: {e}")
-        break
+        return
     size += step
     time.sleep(sleep)
 
